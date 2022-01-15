@@ -1,0 +1,11 @@
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\bin\Debug\MathQuiz.exe.config
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\bin\Debug\MathQuiz.exe
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\bin\Debug\MathQuiz.pdb
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\obj\Debug\MathQuiz.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\obj\Debug\MathQuiz.csproj.SuggestedBindingRedirects.cache
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\obj\Debug\MathQuiz.Form1.resources
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\obj\Debug\MathQuiz.Properties.Resources.resources
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\obj\Debug\MathQuiz.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\obj\Debug\MathQuiz.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\obj\Debug\MathQuiz.exe
+\\Mac\Home\Desktop\CIT 365\MathQuiz\MathQuiz\MathQuiz\obj\Debug\MathQuiz.pdb
