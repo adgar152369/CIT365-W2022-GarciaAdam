@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "02f04178-51a7-46b7-9d9c-6af811b843dc": {
+      "ProjectGuid": "02f04178-51a7-46b7-9d9c-6af811b843dc",
+      "DisplayName": "MegaDesk",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
