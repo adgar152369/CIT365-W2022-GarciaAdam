@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MegaDesk
 {
-    enum SurfaceMaterial
+    public enum SurfaceMaterial
     {
         Oak,
         Laminate,

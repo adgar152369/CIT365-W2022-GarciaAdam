@@ -15,6 +15,8 @@ namespace MegaDesk
         public AddQuote()
         {
             InitializeComponent();
+
+            comboBox1.DataSource = Enum.GetValues(typeof(SurfaceMaterial));
         }
 
 
@@ -59,5 +61,6 @@ namespace MegaDesk
             DeskQuote deskQuote = new DeskQuote();
             deskQuote.calculateQuote();
         }
+
     }
 }

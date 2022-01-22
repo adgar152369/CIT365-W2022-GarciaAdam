@@ -19,6 +19,8 @@ namespace MegaDesk
 
         public void displayQuote(int total)
         {
+            DeskQuote deskQuote = new DeskQuote();
+            customerNameLabel.Text = deskQuote.customerName;
             displayUserQuote.Text = total.ToString();
         }
     }

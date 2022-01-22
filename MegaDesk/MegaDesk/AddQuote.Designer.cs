@@ -164,6 +164,11 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
             this.comboBox1.TabIndex = 14;
+            this.comboBox1.Items.AddRange(new object[] {"Item 1",
+                        "Item 2",
+                        "Item 3",
+                        "Item 4",
+                        "Item 5"});
             // 
             // AddQuote
             // 

@@ -29,23 +29,46 @@
         private void InitializeComponent()
         {
             this.displayUserQuote = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.customerNameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // displayUserQuote
             // 
             this.displayUserQuote.AutoSize = true;
-            this.displayUserQuote.Location = new System.Drawing.Point(366, 171);
+            this.displayUserQuote.Location = new System.Drawing.Point(197, 80);
+            this.displayUserQuote.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.displayUserQuote.Name = "displayUserQuote";
-            this.displayUserQuote.Size = new System.Drawing.Size(78, 32);
+            this.displayUserQuote.Size = new System.Drawing.Size(38, 15);
             this.displayUserQuote.TabIndex = 0;
             this.displayUserQuote.Text = "label1";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(33, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 15);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Your Order,";
+            // 
+            // customerNameLabel
+            // 
+            this.customerNameLabel.AutoSize = true;
+            this.customerNameLabel.Location = new System.Drawing.Point(107, 26);
+            this.customerNameLabel.Name = "customerNameLabel";
+            this.customerNameLabel.Size = new System.Drawing.Size(0, 15);
+            this.customerNameLabel.TabIndex = 2;
+            // 
             // DisplayQuote
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(431, 211);
+            this.Controls.Add(this.customerNameLabel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.displayUserQuote);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "DisplayQuote";
             this.Text = "DisplayQuote";
             this.ResumeLayout(false);
@@ -56,5 +79,7 @@
         #endregion
 
         private Label displayUserQuote;
+        private Label label1;
+        private Label customerNameLabel;
     }
 }
