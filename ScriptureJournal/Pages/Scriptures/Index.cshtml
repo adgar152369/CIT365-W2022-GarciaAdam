@@ -1,0 +1,115 @@
+@page
+@model ScriptureJournal.Pages.Scriptures.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+
+    body {
+        background-color: #36454F;
+    }
+    nav {
+        background-color: black;
+    }
+    .table {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    h1 {
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    .book-search {
+        color: #fff;
+    }
+    #create-new-link {
+        color: #fff;
+        text-decoration: underline;
+        width: 25%;
+    }
+    select {
+        height:25px;
+    }
+    form {
+        display: flex;
+        margin-bottom: 15px;
+        align-items: center;
+        width: 50%;
+    }
+    form p {
+        margin-left: 20px;
+    }
+    .add-filter {
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
+
+<h1>My Journal</h1>
+
+<div class="add-filter">
+    <p>
+        <a id="create-new-link" asp-page="Create">Create New</a>
+    </p>
+    <form>
+        <select asp-for="ScriptureBooks" asp-items="Model.Books">
+            <option value="">All</option>
+        </select><br />
+
+        <p class="book-search">
+            Book: <input type="text" asp-for="SearchString" />
+            <input type="submit" value="Filter" />
+        </p>
+    </form>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Scripture[0].Book)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Scripture[0].Chapter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Scripture[0].Verse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Scripture[0].DateAdded)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Scripture[0].Notes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Scripture) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chapter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Verse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateAdded)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
