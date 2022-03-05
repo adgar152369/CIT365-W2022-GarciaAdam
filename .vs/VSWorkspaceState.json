@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MvcMovie",
+    "\\MvcMovie\\MvcMovie",
+    "\\MvcMovie\\MvcMovie\\Controllers",
+    "\\MvcMovie\\MvcMovie\\Views",
+    "\\MvcMovie\\MvcMovie\\Views\\HelloWorld",
+    "\\MvcMovie\\MvcMovie\\Views\\Movies",
+    "\\MvcMovie\\MvcMovie\\Views\\Shared"
   ],
-  "SelectedNode": "\\C:\\Users\\adgar\\Source\\Repos\\CIT365-W2022-GarciaAdam",
+  "SelectedNode": "\\MvcMovie\\MvcMovie\\Controllers\\MoviesController.cs",
   "PreviewInSolutionExplorer": false
 }
