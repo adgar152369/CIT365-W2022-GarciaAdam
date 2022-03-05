@@ -4,12 +4,9 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>My Movies</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<form asp-controller="Movies" asp-action="Index" method="get">
+<form id="user-filter" asp-controller="Movies" asp-action="Index" method="get">
     <p>
         <select asp-for="MovieGenre" asp-items="Model.Genres">
             <option value="">All</option>
@@ -19,6 +16,7 @@
         <input type="submit" value="Filter" />
     </p>
 </form>
+
 <table class="table">
     <thead>
         <tr>
@@ -47,13 +45,13 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
-            <td>
+            <td id="release">
                 @Html.DisplayFor(modelItem => item.ReleaseDate)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Genre)
             </td>
-            <td>
+            <td id="price">
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
@@ -69,10 +67,15 @@
     </tbody>
 </table>
 
+<p>
+    <a class="add-movie" asp-action="Create">Add Movie</a>
+</p>
+
 <style>
     body {
-        background-color: #fff;
+        background-color: lightgrey;
     }
+
     .table {
         background-color: #36454F;
         color: #fff;
@@ -82,7 +85,7 @@
     }
 
     .table th {
-        color: lightgrey;
+        color: #2edfff;
     }
 
     .table td {
@@ -91,5 +94,23 @@
 
     .modify-links {
         color: lightblue;
+    }
+
+    #release, #price {
+        color: lightgrey;
+    }
+
+    #user-filter {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 50px;
+    }
+
+    .add-movie {
+        padding: 5px 7px;
+        border-radius: 5px;
+        background: #fff;
+        text-decoration: none;
+        box-shadow: 0px 5px 10px -8px rgba(0,0,0,.5);
     }
 </style>
