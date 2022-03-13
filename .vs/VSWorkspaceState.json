@@ -1,14 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\AdamsUniversity",
     "\\MvcMovie",
     "\\MvcMovie\\MvcMovie",
-    "\\MvcMovie\\MvcMovie\\Controllers",
-    "\\MvcMovie\\MvcMovie\\Views",
-    "\\MvcMovie\\MvcMovie\\Views\\HelloWorld",
-    "\\MvcMovie\\MvcMovie\\Views\\Movies",
-    "\\MvcMovie\\MvcMovie\\Views\\Shared"
+    "\\MvcMovie\\MvcMovie\\Controllers"
   ],
-  "SelectedNode": "\\MvcMovie\\MvcMovie.sln",
+  "SelectedNode": "\\AdamsUniversity\\AdamsUniversity.sln",
   "PreviewInSolutionExplorer": false
 }

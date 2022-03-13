@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron bg-cover text-white" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.unsplash.com/photo-1598275930570-8adc5898e39e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80)">
+    <h1>Great University</h1>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h2>Welcome to Great University</h2>
+        <p>
+            Great University website manages enrollment for all students, as well as instructors, courses, and departments.
+        </p>
+    </div>
+</div>
+<div class="row quick-link-container">
+    <div class="col-md-3">
+        <h2>Quick Links</h2>
+    </div>
+</div>
+<div class="quick-links">
+    <div class="quick-link">
+        <a class="btn text-light" asp-area="" asp-controller="Students" asp-action="Index">Students</a>
+    </div>
+    <div class="quick-link">
+        <a class="btn text-light" asp-area="" asp-controller="Courses" asp-action="Index">Courses</a>
+    </div>
+    <div class="quick-link">
+        <a class="btn text-light" asp-area="" asp-controller="Instructors" asp-action="Index">Instructors</a>
+    </div>
+</div>
+<div class="d-flex flex-row-reverse">
+    <div class="image">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" />
+    </div>
+</div>
+
+<style>
+    .quick-link-container {
+        margin: 25px 0;
+    }
+    .quick-link {
+        margin-bottom: 25px;
+        width: 150px;
+    }
+
+    .quick-link a {
+        width: 100%;
+        background-color: #900000;
+    }
+
+    .image {
+        width: 50%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+</style>
